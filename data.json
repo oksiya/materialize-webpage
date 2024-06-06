@@ -1,36 +1,41 @@
 {
     "user" : {
-        "fullName": "",
-        "photo" : ""
-    },
-    "city" : {
-        "name" : "",
-        "photo" : "",
+        "fullName": "Siyabonga Masuku",
+        "photo" : "siya.jpg",
         "description" : ""
     },
+    "city" : {
+        "name" : "Shibuya Toyko",
+        "photo" : "shibuya.jpg",
+        "description" : "Shibuya, Tokyo, holds a special allure for me. It's not just the bustling streets and vibrant culture, but also the emotional ties to the world of Jujutsu Kaisen. In this district, characters like Yuji Itadori and Choso clashed in a pivotal battle, leaving a lasting impact on fans like myself. Shibuya is more than just a setting; it's a place where fiction and emotion intertwine, making it a must-visit destination for any fan of the series, including me."
+    },
     "foreignLanguage" : {
-        "language" : "",
+        "language" : "Japanese",
+        "description" : "The language that I'm eager to learn is Japanese. My fascination with Japanese culture, from its traditional arts to its modern innovations, fuels my desire to delve into the language.",
         "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "こんにちは"
         },
         {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+            "englishPhrase" : "Thannk You",
+            "foreignLanguage" : "ありがとう"
         }]
     },
     "favouriteSubjects" : [
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Mathematics",
+            "icon" : "./public/maths_icon.png",
+            "description" : "Mathematics is the study of numbers, shapes, and patterns, providing essential tools for problem-solving in fields like engineering and science. It enhances logical thinking and is fundamental to technological advancements."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Physics",
+            "icon" : "./public/phy_icon.png",
+            "description" : "Physics explores the laws of nature, from particles to galaxies, focusing on matter, energy, and their interactions. It leads to technological innovations and deepens our understanding of the universe."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Computer Science",
+            "icon": "./public/comp_icon.png",
+            "description" : "Computer Science studies computation and information. It covers algorithms, software, and hardware, driving innovation in AI, cybersecurity, and data science. It equips us to solve complex problems and advance technology."
         }
     ]
 }

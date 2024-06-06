@@ -1,0 +1,96 @@
+
+
+
+
+@media(min-width: 960px){
+    .sub_resp{
+        display: flex;
+    }
+
+    .city{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .intro{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    
+}
+
+.intro {
+    background-image: url('tabMount.jpg');
+    align-items: center;
+    height: 550px;
+    background-size: cover;
+    padding: 1em;
+    font-size: xx-large;
+    color: white;
+    margin: 1.5em;
+}
+
+h2{
+    padding-left: 1em;
+}
+
+.profile{
+    width: 250px;
+    height: 330px;
+    border-radius: 20%;
+    border: solid white;
+    padding: 0.5em;
+}
+
+.city{
+
+    font-size: large;
+    font-style: italic;
+    font-family: Arial;
+    padding: 1em;
+}
+
+.parent_city{
+    height: 550px;
+    color: #424B54;
+    padding: 1em;
+    margin: 1.5em;
+    background-color: #C5BAAF;
+    align-items: center;
+
+}
+
+
+.shibuya{
+    width: 800px;
+    height: 400px;
+    padding: 0.5em;
+    border-radius: 10%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.language{
+    align-items: center;
+    height: 550px;
+    background-color: #C5BAAF;
+    margin: 1.5em;
+    color: #424B54;
+    padding: 1em;
+    font-size: large;
+}
+
