@@ -3,7 +3,7 @@
 
 
 @media(min-width: 960px){
-    .sub_resp{
+    .row subject{
         display: flex;
     }
 
@@ -20,54 +20,73 @@
         justify-content: space-evenly;
     }
 
+    .shibuya{
+        width: 800px;
+        height: 400px;
+    }
+
     
 }
 
 .intro {
     background-image: url('tabMount.jpg');
-    align-items: center;
-    height: 550px;
+    text-align: center;
+    height: fit-content;
     background-size: cover;
     padding: 1em;
     font-size: xx-large;
     color: white;
     margin: 1.5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 
 h2{
     padding-left: 1em;
+    color: #424B54;
 }
 
 .profile{
     width: 250px;
     height: 330px;
     border-radius: 20%;
-    border: solid white;
     padding: 0.5em;
 }
 
-.city{
+body{
+    width: 660px;
+}
 
-    font-size: large;
+
+.city{
     font-style: italic;
     font-family: Arial;
     padding: 1em;
 }
 
+.city p{
+    border-radius: 10%;
+    background: gray;
+    padding: 1em;
+    color: white;
+}
+
 .parent_city{
-    height: 550px;
-    color: #424B54;
+    height: fit-content;
+    font-size: large;
+    background-color: #D8E1E9;
     padding: 1em;
     margin: 1.5em;
-    background-color: #C5BAAF;
-    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
 
 }
 
 
 .shibuya{
-    width: 800px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     padding: 0.5em;
     border-radius: 10%;
 }
@@ -84,13 +103,30 @@ th, td {
     text-align: center;
 }
 
+body{
+    min-width: fit-content;
+}
+
 .language{
     align-items: center;
-    height: 550px;
-    background-color: #C5BAAF;
+    height: fit-content;
+    background-color: #D8E1E9;
     margin: 1.5em;
     color: #424B54;
     padding: 1em;
     font-size: large;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.subjects{
+
+    height: fit-content;
+    background-color: #D8E1E9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 1.5em;
+    padding: 1em;
+
 }
 

@@ -3,27 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        content, html {
-            background-color: burlywood;
-            display: flex; /* Enables Flexbox layout on the body */
-            align-items: center; /* Vertically centers the flex items within the body */
-            justify-content: center; /* Horizontally centers the flex items within the body */
-            height: 100%; /* Sets the height to 100% of the viewport */
-        }
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    </style>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="paragraph">
-        <p>
-            Welcome!!! I made my portfolio page using two different layouts namely, 
-            <a href="flex_box.html">FlexBox</a> 
-            and 
-            <a href="simple_grid.html">Simple Grid</a>. 
-            Please click layout name to visit the site.
-        </p>
+<body class="container">
+    <!-- Intro Section -->
+    <div class="intro">
+        <h1>{{user.fullName}}</h1>
+        <img src="{{user.photo}}" class="profile" alt="Photo of {{user.fullName}}">
+    </div>
+
+    <!-- Which City Section -->
+    <div class="parent_city">
+        <h2>{{city.name}}</h2>
+        <div class="city">
+            <img src="{{city.photo}}" class="shibuya" alt="{{city.name}}">
+            <p>{{city.description}}</p>
+        </div>
+    </div>
+
+    <!-- A Foreign Language Section -->
+    <div class="language">
+        <h2>{{foreignLanguage.language}}</h2>
+        <p>{{foreignLanguage.description}}</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th>{{foreignLanguage.language}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{this.englishPhrase}}</td>
+                    <td>{{this.foreignLanguage}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Favourite Subjects Section -->
+    <div class="subjects">
+        <div class="row">
+            <h2>Favourite Subjects</h2>
+            {{#each favouriteSubjects}}
+            <div class="col s4">
+                <h3>{{this.name}}</h3>
+                <img src="{{this.icon}}" width="50" alt="{{this.name}}">
+                <p>{{this.description}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="subjects">
+        <div class="row">
+            <h2>Favourite Subjects</h2>
+            {{#each favouriteSubjects}}
+            <div class="col s12">
+                <h3>{{this.name}}</h3>
+                <img src="{{this.icon}}" width="50" alt="{{this.name}}">
+                <p>{{this.description}}</p>
+            </div>
+            {{/each}}
+        </div>
     </div>
 </body>
 </html>

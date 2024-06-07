@@ -1,8 +1,7 @@
 {
     "user" : {
         "fullName": "Siyabonga Masuku",
-        "photo" : "siya.jpg",
-        "description" : ""
+        "photo" : "siya.jpeg"
     },
     "city" : {
         "name" : "Shibuya Toyko",
@@ -24,17 +23,17 @@
     "favouriteSubjects" : [
         {
             "name" : "Mathematics",
-            "icon" : "./public/maths_icon.png",
+            "icon" : "maths_icon.png",
             "description" : "Mathematics is the study of numbers, shapes, and patterns, providing essential tools for problem-solving in fields like engineering and science. It enhances logical thinking and is fundamental to technological advancements."
         },
         {
             "name" : "Physics",
-            "icon" : "./public/phy_icon.png",
+            "icon" : "phy_icon.png",
             "description" : "Physics explores the laws of nature, from particles to galaxies, focusing on matter, energy, and their interactions. It leads to technological innovations and deepens our understanding of the universe."
         },
         {
             "name" : "Computer Science",
-            "icon": "./public/comp_icon.png",
+            "icon": "comp_icon.png",
             "description" : "Computer Science studies computation and information. It covers algorithms, software, and hardware, driving innovation in AI, cybersecurity, and data science. It equips us to solve complex problems and advance technology."
         }
     ]
