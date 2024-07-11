@@ -25,11 +25,10 @@
   "contributors": [],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "test": ""
+    "build": "build vite"
   },
   "devDependencies": {
-    "vite": "^5.2.12",
+    "vite": "^5.3.3",
     "vite-plugin-handlebars": "^2.0.0"
   }
 }

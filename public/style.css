@@ -1,132 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9BC1BC;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2{
+    color: #333;
+}
 
 
+.intro img {
+    width: 350px;
+    height: 400px;
+    border-radius: 4px;  
+}
 
-
-@media(min-width: 960px){
-    .row subject{
-        display: flex;
-    }
-
-    .city{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .intro{
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .shibuya{
-        width: 800px;
-        height: 400px;
-    }
-
-    
+.intro_in {
+    background-color: #9BC1BC;
+    padding: 10px;
 }
 
 .intro {
     background-image: url('tabMount.jpg');
+    display: flex;
+    gap: 40px;
+    align-items: center;
     text-align: center;
     height: fit-content;
     background-size: cover;
     padding: 1em;
     font-size: xx-large;
     color: white;
-    margin: 1.5em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-
-h2{
-    padding-left: 1em;
-    color: #424B54;
+.city img, .Historic_places img {
+    width: 50%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
-.profile{
-    width: 250px;
-    height: 330px;
-    border-radius: 20%;
-    padding: 0.5em;
-}
-
-body{
-    width: 660px;
-}
-
-
-.city{
+.city_in p {
+    color: #9BC1BC;
+    font-size: larger;
     font-style: italic;
-    font-family: Arial;
-    padding: 1em;
 }
 
-.city p{
-    border-radius: 10%;
-    background: gray;
-    padding: 1em;
+
+.city_in {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.language table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.language th, .language td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.language th {
+    background-color: #f2f2f2;
+}
+
+/* Favourite Subjects */
+.subjects {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.subject {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 30px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subject img {
+    margin-right: 20px;
+}
+
+.subject div {
+    max-width: 500px;
+}
+
+
+.sub {
+    text-align: center;
+    background-color: #9BC1BC;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+.Historic_places {
+    display: flex;
+    gap: 20px;
+}
+
+.Historic_places .pair {
+    display: flex;
+    align-items: center;
+    
+}
+
+.Historic_places div {
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.Historic_places p, .subject p {
+
     color: white;
 }
 
-.parent_city{
-    height: fit-content;
-    font-size: large;
-    background-color: #D8E1E9;
-    padding: 1em;
-    margin: 1.5em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    
 
+.Historic_places h3{
+    color: white;
+    padding: 30px;
+    margin-top: 0;
 }
 
-
-.shibuya{
-    width: 500px;
-    height: 300px;
-    padding: 0.5em;
-    border-radius: 10%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-table, th, td {
-    border: 1px solid black;
-}
-th, td {
-    padding: 10px;
+.contacts {
     text-align: center;
 }
 
-body{
-    min-width: fit-content;
+@media (max-width: 960px) {
+    .Historic_places {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place2 .pair{
+
+        flex-direction: row-reverse;
+    }
+
+    .subjects{
+        flex-direction: column;
+    }
+
+    .city_in {
+        flex-direction: column;
+
+    }
+
+    .city img {
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        font-size: x-large;
+    }
+
+    .intro img {
+        width: 250px;
+        height: 300px;
+        border-radius: 4px;  
+    }
 }
 
-.language{
-    align-items: center;
-    height: fit-content;
-    background-color: #D8E1E9;
-    margin: 1.5em;
-    color: #424B54;
-    padding: 1em;
-    font-size: large;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
 
-.subjects{
 
-    height: fit-content;
-    background-color: #D8E1E9;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin: 1.5em;
-    padding: 1em;
-
-}
 

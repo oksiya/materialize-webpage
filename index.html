@@ -15,57 +15,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-    <!-- Intro Section -->
-    <div class="intro">
-        <h1>{{user.fullName}}</h1>
-        <img src="{{user.photo}}" class="profile" alt="Photo of {{user.fullName}}">
-    </div>
-
-    <!-- Which City Section -->
-    <div class="parent_city">
-        <h2>{{city.name}}</h2>
-        <div class="city">
-            <img src="{{city.photo}}" class="shibuya" alt="{{city.name}}">
-            <p>{{city.description}}</p>
+<body>
+    <section class="intro">
+        <div class="intro_in">
+            <img src="{{intro.image}}" alt="{{intro.altText}}">
+            <h1>{{name}}</h1>           
         </div>
-    </div>
-
-    <!-- A Foreign Language Section -->
-    <div class="language">
-        <h2>{{foreignLanguage.language}}</h2>
-        <p>{{foreignLanguage.description}}</p>
+        <p>{{intro.description}}</p>
+    </section>
+    <section class="city">
+        <h2>{{city.name}}</h2>
+        <div class="city_in">
+            <img src="{{city.image}}" alt="{{city.altText}}"> 
+            <p>{{city.description}}</p>         
+        </div>
+    </section>
+    <section class="language">
+        <h2>{{language.name}}</h2>
+        <p>{{language.description}}</p>
         <table>
             <thead>
                 <tr>
                     <th>English</th>
-                    <th>{{foreignLanguage.language}}</th>
+                    <th>{{language.name}}</th>
                 </tr>
             </thead>
             <tbody>
-                {{#each foreignLanguage.phrases}}
+                {{#each language.phrases}}
                 <tr>
-                    <td>{{this.englishPhrase}}</td>
-                    <td>{{this.foreignLanguage}}</td>
+                    <td>{{this.english}}</td>
+                    <td>{{this.translation}}</td>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
-    </div>
-
-    <!-- Favourite Subjects Section -->
-    <div class="subjects">
-        <div class="row">
-            <h2>Favourite Subjects</h2>
-            {{#each favouriteSubjects}}
-            <div class="col l4 s12">
-                <h3>{{this.name}}</h3>
-                <img src="{{this.icon}}" width="100" alt="{{this.name}}">
+    </section>
+    <section>
+        <h2>Favourite Subjects</h2>
+        <p>{{qualification}}</p>
+        <div class="subjects">
+            {{#each subjects}}
+            <div class="subject">
+                <div class="sub">
+                    <img src="{{this.icon}}" width="50" alt="{{this.altText}}">
+                    <h3>{{this.name}}</h3>                
+                </div>
                 <p>{{this.description}}</p>
             </div>
             {{/each}}
         </div>
-    </div>
-
+    </section>
+    <section>
+        <h2>Historic Places in {{city.region}}</h2>
+        <div class="Historic_places">
+            {{#each historicPlaces}}
+            <div class="place">
+                <h3>{{this.name}}</h3>
+                <div class="pair">
+                    <p>{{this.description}}</p>
+                    <img src="{{this.image}}" alt="{{this.altText}}">                    
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+    <section class="contacts">
+        <h3>Contact Us</h3>
+        <p>{{contacts.email}} | {{contacts.phone}}</p>
+    </section>
 </body>
 </html>

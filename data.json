@@ -1,40 +1,68 @@
 {
-    "user" : {
-        "fullName": "Siyabonga Masuku",
-        "photo" : "siya.jpeg"
+    "name": "Siyabonga Masuku",
+    "intro": {
+        "image": "siya.jpg",
+        "altText": "Siyabonga Masuku with Table Mountain in the background",
+        "description": "Welcome to the personal webpage of Siyabonga Masuku. Driven by a passion for problem-solving and innovation, I hold a BSc Honours in Computer Science and have a keen interest in data science, technology, and various cultures. This website provides a glimpse into my interests, favorite subjects, and places I hold dear."
     },
-    "city" : {
-        "name" : "Shibuya Toyko",
-        "photo" : "shibuya.jpg",
-        "description" : "Shibuya, Tokyo, holds a special allure for me. It's not just the bustling streets and vibrant culture, but also the emotional ties to the world of Jujutsu Kaisen. In this district, characters like Yuji Itadori and Choso clashed in a pivotal battle, leaving a lasting impact on fans like myself. Shibuya is more than just a setting; it's a place where fiction and emotion intertwine, making it a must-visit destination for any fan of the series, including me."
+    "city": {
+        "name": "Shibuya, Tokyo",
+        "image": "shibuya.jpg",
+        "altText": "Shibuya, Tokyo",
+        "description": "Shibuya, Tokyo, holds a special allure for me. It's not just the bustling streets and vibrant culture, but also the emotional ties to the world of Jujutsu Kaisen. In this district, characters like Yuji Itadori and Choso clashed in a pivotal battle, leaving a lasting impact on fans like myself. Shibuya is more than just a setting; it's a place where fiction and emotion intertwine, making it a must-visit destination for any fan of the series, including me.",
+        "region": "Gauteng"
     },
-    "foreignLanguage" : {
-        "language" : "Japanese",
-        "description" : "The language that I'm eager to learn is Japanese. My fascination with Japanese culture, from its traditional arts to its modern innovations, fuels my desire to delve into the language.",
-        "phrases" : [{
-            "englishPhrase" : "Hello",
-            "foreignLanguage" : "こんにちは"
+    "language": {
+        "name": "Japanese",
+        "description": "The language that I'm eager to learn is Japanese. My fascination with Japanese culture, from its traditional arts to its modern innovations, fuels my desire to delve into the language.",
+        "phrases": [
+            {"english": "Hello", "translation": "こんにちは"},
+            {"english": "Thank You", "translation": "ありがとう"}
+        ]
+    },
+    "qualification": "BSc Honours in Computer Science, University of Johannesburg.",
+    "subjects": [
+        {
+            "name": "Mathematics",
+            "icon": "maths_icon.png",
+            "altText": "Mathematics icon",
+            "description": "Mathematics is the study of numbers, shapes, and patterns, providing essential tools for problem-solving in fields like engineering and science. It enhances logical thinking and is fundamental to technological advancements."
         },
         {
-            "englishPhrase" : "Thannk You",
-            "foreignLanguage" : "ありがとう"
-        }]
-    },
-    "favouriteSubjects" : [
-        {
-            "name" : "Mathematics",
-            "icon" : "maths_icon.png",
-            "description" : "Mathematics is the study of numbers, shapes, and patterns, providing essential tools for problem-solving in fields like engineering and science. It enhances logical thinking and is fundamental to technological advancements."
+            "name": "Physics",
+            "icon": "phy_icon.png",
+            "altText": "Physics icon",
+            "description": "Physics explores the laws of nature, from particles to galaxies, focusing on matter, energy, and their interactions. It leads to technological innovations and deepens our understanding of the universe."
         },
         {
-            "name" : "Physics",
-            "icon" : "phy_icon.png",
-            "description" : "Physics explores the laws of nature, from particles to galaxies, focusing on matter, energy, and their interactions. It leads to technological innovations and deepens our understanding of the universe."
-        },
-        {
-            "name" : "Computer Science",
+            "name": "Computer Science",
             "icon": "comp_icon.png",
-            "description" : "Computer Science studies computation and information. It covers algorithms, software, and hardware, driving innovation in AI, cybersecurity, and data science. It equips us to solve complex problems and advance technology."
+            "altText": "Computer Science icon",
+            "description": "Computer Science studies computation and information. It covers algorithms, software, and hardware, driving innovation in AI, cybersecurity, and data science. It equips us to solve complex problems and advance technology."
         }
-    ]
+    ],
+    "historicPlaces": [
+        {
+            "name": "Braamfontein",
+            "image": "braam.jpg",
+            "altText": "Braamfontein",
+            "description": "Braamfontein is a central suburb of Johannesburg, known for its vibrant street art, cultural landmarks, and bustling student life. It hosts the University of the Witwatersrand, a key educational institution in South Africa."
+        },
+        {
+            "name": "University of Johannesburg",
+            "image": "uj.jpg",
+            "altText": "University of Johannesburg",
+            "description": "The University of Johannesburg is a prestigious institution that plays a significant role in the educational landscape of South Africa. It is renowned for its diverse academic programs and innovative research."
+        },
+        {
+            "name": "Johannesburg Theatre",
+            "image": "theatre.jpg",
+            "altText": "Johannesburg Theatre",
+            "description": "Johannesburg Theatre, also known as the Joburg Theatre, is a premier performing arts venue in the city. It hosts a variety of performances, including plays, musicals, and concerts, making it a cultural hub."
+        }
+    ],
+    "contacts": {
+        "email": "siya.coma@gmail.com",
+        "phone": "(+27) 78 299 1217"
+    }
 }
